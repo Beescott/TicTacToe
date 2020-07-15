@@ -6,4 +6,12 @@ export class Player {
         this._socketID = socketID;
         this._name = name;
     }
+
+    public logPlayer(): void {
+        console.log("name: %s, id: %s", this._name, this._socketID);
+    }
+
+    public getSocketID(): string {
+        return this._socketID;
+    }
 }

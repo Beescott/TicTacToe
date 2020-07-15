@@ -9,4 +9,16 @@ export class Board {
             this._board[index] = BoardElement.None;            
         }
     }
+
+    public getBoardElement(index: number): BoardElement {
+        return this._board[index];
+    }
+
+    public setBoardElement(index: number, boardElement: BoardElement): boolean {
+        if (this._board[index] != BoardElement.None)
+            return false;
+        
+        this._board[index] = boardElement;
+        return true;
+    }
 }
