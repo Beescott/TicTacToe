@@ -1,5 +1,5 @@
 export enum BoardElement {
-    None = '0',
+    None = 'N',
     X = 'X',
     O = 'O'
 }
